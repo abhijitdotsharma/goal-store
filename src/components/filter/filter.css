@@ -1,0 +1,130 @@
+.filter-wrapper{
+    width: 20rem;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:4.9rem;
+    bottom: 0;
+    padding: 1rem;
+    overflow-y: scroll;
+}  
+.filter-container {
+    letter-spacing: 0.8px;
+    background-color: var(--color-sidebar);
+    padding: 1.2rem;
+    width: 100%;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.price{
+    margin: 2rem 0;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.slider input {
+    width: 110%;
+}
+
+.filter-category{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    line-height: 32px;
+}
+
+.filter-category div{
+   margin: 0 auto;
+   width: 30%;
+}
+
+.filter-category > .vertical-align-checkbox{
+    /*align text beside checkbox */
+    vertical-align: -1px;
+    display: inline;/* cart-product.css has input display block */
+    
+}
+
+.rating{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100%;
+    line-height: 32px;
+}
+
+.rating div{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.sort{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100%;
+    line-height: 32px;
+}
+
+.sort div{
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* .vertical-align-radio{
+    /*align text beside radio*/
+    /* vertical-align: -3px;
+    display: inline;
+    border: 1px solid salmon;
+} */ 
+
+.demo{
+    display: none;
+}
+
+.filter-wrapper::-webkit-scrollbar { width: 0 !important }
+.filter-wrapper { overflow: -moz-scrollbars-none; }
+.filter-wrapper { -ms-overflow-style: none; }
+
+@media screen and (max-width: 620px) {
+
+
+    .filter-wrapper{
+        left: -110vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .filter-active{
+        top: 3rem;
+        left:-2.1rem;
+        width: 105vw;
+        transition: all 0.5s ease-in-out;
+        
+    }
+    
+
+    .demo{
+        background-color: aquamarine;
+        padding: 0.6rem 0.8rem;
+        border-radius: 4rem;
+        display: block;
+        position: fixed;
+        bottom:2rem;
+        right: 0.6rem;
+        z-index: 2;
+    }
+
+    .demo i{
+        /* color: white; */
+        padding: 0.2rem 0;
+    }
+
+}

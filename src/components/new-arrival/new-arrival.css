@@ -1,0 +1,42 @@
+/*new arrival card*/
+.new-arrival-card{
+    margin: auto;
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.new-arrival-image{
+    position: relative; 
+}
+
+.new-arrival-image img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.new-arrival-content{
+    position: absolute;
+    padding: 1rem;
+    top: 3rem;
+    color: #feffff;
+}
+
+.new-arrival-btn{
+    display: inline-block;
+    border: 0.5px solid var(--color-black);
+    color: white;
+    margin-top: 4%;
+    padding: 2% 10%;
+    font-weight: 700;
+    /*experimental - % will be removed/replaced later*/
+}
+
+.new-arrival-content a:hover{
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 650px) {
+    .new-arrival-card{
+        width: 100%;
+    }
+}

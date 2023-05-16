@@ -1,0 +1,71 @@
+/* category */
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.4rem;
+}
+.category-heading{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 1rem;
+}
+.category-heading span{
+    color: var(--color-primary);
+}
+
+.category-images{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-bg-image{
+    background-size: cover;
+    max-width: 18rem;
+    min-width: 14rem;
+    height: 14rem;
+}
+
+.category-image__one{
+    background-image:  linear-gradient(to top, #04000063, #0000006f), url('https://res.cloudinary.com/wickedsharma/image/upload/v1658942612/nou-store/jacket-landing_rmb3mf.jpg');
+}
+.category-image__two{
+    background-image:  linear-gradient(to top, #04000063, #0000006f), url('https://res.cloudinary.com/wickedsharma/image/upload/v1658943288/nou-store/landing-jersey_b7mypg.jpg');
+}
+.category-image__three{
+    background-image:  linear-gradient(to top, #04000063, #0000006f), url('https://res.cloudinary.com/wickedsharma/image/upload/v1658943437/nou-store/landing-boots_yfqkys.jpg');
+}
+.category-image__four{
+    background-image:  linear-gradient(to top, #04000063, #0000006f), url('https://res.cloudinary.com/wickedsharma/image/upload/v1658943577/nou-store/landing-football_t3iuan.jpg');
+}
+
+.category-image{
+    height: 15rem;
+    max-width: 18rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.category-image__text{
+    position: absolute;
+    top: 6rem;
+    left: 4rem;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+/* When the browser is below 620px*/
+@media screen and (max-width: 620px) {
+    /* categories.jsx */
+    .category-images{
+        display: block;
+    }
+
+    .category-image{
+        margin: 0 auto;
+    }    
+}

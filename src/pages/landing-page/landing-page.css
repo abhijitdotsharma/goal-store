@@ -1,0 +1,41 @@
+.landing-img{
+    width:100%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.landing-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.landing-text{
+    color: white;
+    max-width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+    padding: 1rem 2rem;
+
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.landing-h3{
+    font-size: 1em;
+}
+.landing-span{
+    font-size: 0.4em;
+}
+
+@media (min-width: 500px) {
+    .landing-text{
+        font-size: clamp(1rem, 4vw + 0.6rem, 6rem);
+    }
+
+    .landing-span{
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.products-wrapper{
+  height: 100vh;  
+  width: auto;
+  margin: auto;
+  margin-top: 5rem;
+  margin-left: 18rem;
+  padding: 0 1rem;
+}
+.products-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-wrapper::-webkit-scrollbar { width: 0 !important }
+
+@media screen and (max-width: 620px) {
+
+  .products-wrapper{
+    margin: 5rem auto;
+    /* 2product cards will appear, when filter is hidden */
+  }
+
+}

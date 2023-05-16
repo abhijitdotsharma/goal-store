@@ -1,0 +1,122 @@
+.navbar {
+  width: 100%;
+  background-color: #3aafa9;
+  padding: 1rem 4rem;
+  border-bottom: 0;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  /*set margin on divs below nav, nav eats content below it*/
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-right .wishlist,
+.cart {
+  color: white;
+}
+
+.badge-notification {
+  font-size: smaller;
+  background-color: #000000;
+  top: -8px;
+  right: -8px;
+}
+
+.nav-heading {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nav-btn {
+  padding: 0.4rem 1.2rem;
+  background-color: var(--color-primary);
+}
+.nav-btn.logout {
+  background-color: var(--color-logout);
+  margin-bottom: 0;
+}
+.nav-btn:hover {
+  cursor: pointer;
+}
+.nav-input {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  color: var(--color-black);
+}
+
+.ham-btn {
+  display: none;
+}
+
+/* Input and its placeholder must have matching font styles*/
+input,
+input::-webkit-input-placeholder {
+  font-size: normal;
+}
+
+@media screen and (max-width: 620px) {
+  .nav-items {
+    display: block;
+    position: absolute;
+    left: -110vw;
+    transition: all 0.7s ease-in-out;
+    top: 4rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    background-color: cadetblue;
+
+    margin: 1 auto;
+    padding: 3rem 0;
+  }
+
+  .active {
+    left: 0;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .mic--on {
+    top: 10px !important;
+    left: 48px;
+  }
+  .mic--off {
+    top: 10px !important;
+    left: 48px;
+  }
+
+  .nav-input {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .ham-btn {
+    display: block;
+  }
+  .ham-btn i {
+    color: var(--white);
+  }
+}
