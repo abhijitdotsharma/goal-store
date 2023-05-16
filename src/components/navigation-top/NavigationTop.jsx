@@ -41,7 +41,7 @@ export default function NavigationTop() {
   return (
     <nav className="navbar">
       <Link className="nav-heading" to="/">
-        NOU Store
+        Goal Store
       </Link>
       <div className={sidebarOn ? `nav-items active` : `nav-items`}>
         <div style={{position: 'relative', marginRight: 'auto'}}>
