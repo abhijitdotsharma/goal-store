@@ -79,8 +79,9 @@ export default function NavigationTop() {
             </Link>
           )}
 
-          <Link to="/wishlist">
+          <Link to="/wishlist" className='cart-badge'>
             <i className="fal fa-heart wishlist"></i>
+            <span class="badge-notification">{cart?.wishlist?.length || 0}</span>
           </Link>
           <Link to="/cart" className="cart-badge">
             <i className="fal fa-shopping-cart cart"></i>
